@@ -101,10 +101,10 @@ export default function PricingSection() {
         </h2>
 
         {/* Pricing cards - Grid on desktop, slider on mobile */}
-        <div className="hidden md:grid md:grid-cols-3 gap-4 lg:gap-6">
+        <div className="container hidden md:grid md:grid-cols-3 gap-4 lg:gap-6">
           {/* Desktop view - Grid */}
           {pricingCards.map((card, index) => (
-            <div key={index} className="bg-[#0f0f0f] border border-[#333333] rounded-2xl p-6 flex flex-col">
+            <div key={index} className="container bg-[#0f0f0f] border border-[#333333] rounded-2xl p-6 flex flex-col">
               <h3 className="text-[#86A0FF] font-dm-sans text-lg md:text-xl mb-2">{card.title}</h3>
               <div className="flex items-baseline mb-6">
                 <span className="text-[#D9D9D9] font-dm-sans font-extralight text-2xl md:text-3xl">{card.price}</span>

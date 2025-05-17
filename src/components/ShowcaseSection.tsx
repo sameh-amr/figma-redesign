@@ -9,7 +9,7 @@ export default function ShowcaseSection() {
       title: "Lorem ipsum dolor sit amet",
       description:
         "Lorem ipsum dolor sit amet consectetur. Interdum elementum convallis commodo nisi interdum sollicitudin odio. Diam in elementum lobortis semper nisl laoreet in elementum lobortis semper.",
-      imageSrc: "/images/dark-mode-dashboard.png",
+      imageSrc: "/images/coffee.png",
       imageAlt: "Dashboard interface",
       imageOnRight: true,
     },
@@ -17,7 +17,7 @@ export default function ShowcaseSection() {
       title: "Lorem ipsum dolor sit amet",
       description:
         "Lorem ipsum dolor sit amet consectetur. Interdum elementum convallis commodo nisi interdum sollicitudin odio. Diam in elementum lobortis semper nisl laoreet in elementum lobortis semper.",
-      imageSrc: "/images/dark-analytics-interface.png",
+      imageSrc: "/images/coffee.png",
       imageAlt: "Analytics interface",
       imageOnRight: false,
     },
@@ -25,7 +25,7 @@ export default function ShowcaseSection() {
       title: "Lorem ipsum dolor sit amet",
       description:
         "Lorem ipsum dolor sit amet consectetur. Interdum elementum convallis commodo nisi interdum sollicitudin odio. Diam in elementum lobortis semper nisl laoreet in elementum lobortis semper.",
-      imageSrc: "/images/dark-dashboard-charts.png",
+      imageSrc: "/images/coffee.png",
       imageAlt: "Dashboard charts",
       imageOnRight: true,
     },
@@ -33,7 +33,7 @@ export default function ShowcaseSection() {
       title: "Lorem ipsum dolor sit amet",
       description:
         "Lorem ipsum dolor sit amet consectetur. Interdum elementum convallis commodo nisi interdum sollicitudin odio. Diam in elementum lobortis semper nisl laoreet in elementum lobortis semper.",
-      imageSrc: "/images/data-visualization.png",
+      imageSrc: "/images/coffee.png",
       imageAlt: "Data visualization",
       imageOnRight: false,
     },
@@ -41,32 +41,15 @@ export default function ShowcaseSection() {
 
   return (
     <section className=" relative w-full bg-[#222222] py-14 md:py-20 lg:py-24 overflow-hidden">
-      {/* Background blur elements */}
-      <div className="container absolute w-full h-full top-0 left-0 overflow-hidden pointer-events-none">
-        <BlurEllipse
-          position={{ left: "20%", top: "30%" }}
-          color="rgba(134, 160, 255, 0.15)"
-          width="500px"
-          height="500px"
-          className="transform -translate-x-1/2"
-        />
-        <BlurEllipse
-          position={{ left: "80%", top: "70%" }}
-          color="rgba(134, 160, 255, 0.15)"
-          width="500px"
-          height="500px"
-          className="transform -translate-x-1/2"
-        />
-      </div>
 
-      <div className="max-w-[1680px] mx-auto px-3 sm:px-4 md:px-6 lg:px-[100px] relative z-10">
-        {/* Section Title - Centered */}
-        <h2
-          className="font-dm-sans font-extralight text-xl md:text-2xl lg:text-3xl leading-tight text-[#D9D9D9] text-center mx-auto mb-8 md:mb-14"
-          style={{ maxWidth: "1076px" }}
-        >
-          Lorem ipsum urna dapibus cursus
-        </h2>
+      <div className="container max-w-[1680px] mx-auto px-3 sm:px-4 md:px-6 lg:px-[100px] relative z-10 flex flex-col items-center">
+        <div className="flex w-full justify-center">
+          <h2
+            className="font-dm-sans font-extralight text-xl md:text-2xl lg:text-3xl leading-tight text-[#D9D9D9] text-center max-w-[1076px] mx-auto mb-8 md:mb-14"
+          >
+            Lorem ipsum urna dapibus cursus
+          </h2>
+        </div>
 
         {/* Showcase Rows */}
         <div className="space-y-12 md:space-y-16 lg:space-y-24">

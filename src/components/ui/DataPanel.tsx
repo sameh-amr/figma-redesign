@@ -32,7 +32,7 @@ interface DataPanelProps {
 
 export function DataPanel({ title, titleColor = "#D9D9D9", headers, rows, className = "" }: DataPanelProps) {
   return (
-    <div className={`relative w-full max-w-[624px] mx-auto ${className}`}>
+    <div className={`relative w-full max-w-[420px] mx-auto ${className}`} style={{ minWidth: 0 }}>
       {/* Title */}
       <div className="mb-1.5">
         <h3
@@ -48,13 +48,14 @@ export function DataPanel({ title, titleColor = "#D9D9D9", headers, rows, classN
           </span>
         </h3>
 
-        {/* Headers - Using the same structure as rows */}
-        <div className="flex px-4 text-xs font-dm-sans font-medium text-[#888888] mb-1">
-          {rows[0].items.map((item, index) => (
-            <div key={index} className={`${item.width} ${index > 0 ? "ml-8" : ""}`}>
-              {headers[index]?.text || ""}
+        {/* Headers - Single row, no wrapping */}
+        <div className="flex px-2 text-[10px] md:text-xs font-dm-sans font-medium text-[#888888] mb-1 w-full whitespace-nowrap overflow-x-auto">
+          {headers.map((header, index) => (
+            <div key={index} className={`basis-0 grow text-center truncate ${header.className || ''}`} style={{ minWidth: 0 }}>
+              {header.text}
             </div>
           ))}
+          <div className="basis-0 grow text-center truncate" style={{ minWidth: 0 }}></div>
         </div>
       </div>
 
@@ -66,6 +67,7 @@ export function DataPanel({ title, titleColor = "#D9D9D9", headers, rows, classN
           tag={row.tag}
           hasBorder={row.hasBorder}
           isLast={index === rows.length - 1}
+          colCount={headers.length}
         />
       ))}
     </div>
@@ -77,26 +79,26 @@ interface DataRowProps {
   tag: Tag
   hasBorder?: boolean
   isLast?: boolean
+  colCount?: number
 }
 
-function DataRow({ items, tag, hasBorder = false, isLast = false }: DataRowProps) {
+function DataRow({ items, tag, hasBorder = false, isLast = false, colCount = 0 }: DataRowProps) {
   const tagColorClass = tag.color === "green" ? "text-[#B0FFA0]" : "text-[#FFA0AC]"
   const rowBaseClass =
-    "relative w-full h-[50px] bg-[rgba(217,217,217,0.1)] rounded-[30px] flex items-center px-4 hover:bg-[rgba(217,217,217,0.15)] transition-colors cursor-pointer"
+    `relative w-full bg-[rgba(217,217,217,0.1)] rounded-[30px] grid grid-cols-${colCount + 1} items-center px-2 hover:bg-[rgba(217,217,217,0.15)] transition-colors cursor-pointer`
 
   return (
-    <div className={`${rowBaseClass} ${isLast ? "" : "mb-[8px]"} ${hasBorder ? "border border-[#D9D9D9]" : ""}`}>
+    <div className={`relative w-full bg-[rgba(217,217,217,0.1)] rounded-[30px] flex items-center px-2 hover:bg-[rgba(217,217,217,0.15)] transition-colors cursor-pointer${isLast ? '' : ' mb-[8px]'}${hasBorder ? ' border border-[#D9D9D9]' : ''}`} style={{ minWidth: 0, fontSize: '10px', overflowX: 'auto', whiteSpace: 'nowrap' }}>
       {items.map((item, index) => (
         <span
           key={index}
-          className={`font-dm-sans font-light text-base leading-tight text-[#D9D9D9] ${
-            index > 0 ? "ml-8" : ""
-          } ${item.width} ${item.className || ""}`}
+          className={`basis-0 grow font-dm-sans font-light text-[10px] md:text-xs leading-tight text-[#D9D9D9] text-center truncate ${item.className || ''}`}
+          style={{ minWidth: 0 }}
         >
           {item.text}
         </span>
       ))}
-      <span className={`font-ibm-plex-sans font-normal text-xs leading-tight ${tagColorClass} ml-auto`}>
+      <span className={`basis-0 grow font-ibm-plex-sans font-normal text-[10px] md:text-xs leading-tight ${tagColorClass} text-center whitespace-nowrap`}>
         {tag.text}
       </span>
     </div>

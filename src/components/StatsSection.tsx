@@ -20,12 +20,12 @@ export default function StatsSection() {
     <section className=" relative w-full bg-[#222222] py-14 md:py-20 lg:py-24">
       <div className="container max-w-[1680px] mx-auto px-3 sm:px-4 md:px-6 lg:px-[100px]">
         {/* Section Title - Centered */}
-        <h2 className="font-dm-sans font-extralight text-xl md:text-2xl lg:text-3xl leading-tight text-[#D9D9D9] text-center mx-auto mb-3">
+        <h2 className=" containerfont-dm-sans font-extralight text-xl md:text-2xl lg:text-3xl leading-tight text-[#D9D9D9] text-center mx-auto mb-3">
           Lorem ipsum eu semper sed urna in.
         </h2>
 
         {/* Description paragraph - Centered */}
-        <p className="font-ibm-plex-sans font-light text-xs md:text-sm lg:text-base leading-relaxed text-[#D9D9D9] text-center mx-auto mb-10 md:mb-16">
+        <p className="container font-ibm-plex-sans font-light text-xs md:text-sm lg:text-base leading-relaxed text-[#D9D9D9] text-center mx-auto mb-10 md:mb-16">
           Lorem ipsum dolor sit amet consectetur. Tortor egestas at pulvinar amet tortor. Eu non tristique faucibus
           venenatis fringilla. Sit turpis consectetur lobortis commodo sit lacus tellus sed. Ut arcu pellentesque diam
           dolor. Amet vestibulum nullam dolor phasellus quam integer. Placerat sed lacus nulla a. Malesuada.

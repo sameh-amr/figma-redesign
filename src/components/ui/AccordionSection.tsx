@@ -29,7 +29,7 @@ export function AccordionSection({
   icons,
 }: AccordionSectionProps) {
   return (
-    <div>
+    <div className="container">
       <button
         onClick={toggleExpanded}
         className="w-full flex justify-between items-center py-4 border-b border-[#333333] text-left focus:outline-none group"
