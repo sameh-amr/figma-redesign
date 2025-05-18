@@ -35,7 +35,7 @@ export default function PricingSection() {
       period: "",
       description:
         "Lorem ipsum dolor sit amet consectetur. Dui porta mattis nec ipsum. Euismod pharetra in cursus fermentum. Nulla aliquet nulla in tincidunt aliquet fames. Varius habitant.",
-      buttonText: "Lorem ipsum gravida",
+      buttonText: "Lorem ipsum",
       buttonStyle: "secondary",
     },
   ]
@@ -104,7 +104,7 @@ export default function PricingSection() {
         <div className="container hidden md:grid md:grid-cols-3 gap-4 lg:gap-6">
           {/* Desktop view - Grid */}
           {pricingCards.map((card, index) => (
-            <div key={index} className="container bg-[#0f0f0f] border border-[#333333] rounded-2xl p-6 flex flex-col sm:min-h-[391px] md:min-h-[520px] lg:min-h-[400px] w-[80%] max-w-[80%]">
+            <div key={index} className="container bg-[#0f0f0f] border border-[#333333] rounded-2xl p-6 flex flex-col sm:min-h-[391px] md:min-h-[520px] lg:min-h-[400px]  max-w-[100%]">
               <h3 className="text-[#86A0FF] font-dm-sans font-[700] text-[24px] md:text-[30px] lg:text-[36px] mb-2">{card.title}</h3>
               <div className="flex items-baseline mb-6">
                 <span className="text-[#D9D9D9] font-dm-sans font-bold text-[28px] md:text-[34px] lg:text-[40px] !font-bold">{card.price}</span>
@@ -112,11 +112,11 @@ export default function PricingSection() {
                   <span className="text-[#D9D9D9] font-dm-sans font-light text-[20px] md:text-[24px] lg:text-[30px] ml-1">{card.period}</span>
                 )}
               </div>
-              <p className="text-[#D9D9D9] font-ibm-plex-sans font-light text-xs leading-relaxed mb-auto">
+              <p className="text-[#D9D9D9] font-dm-sans font-thin text-[16px] md:text-[20px] lg:text-[28px] leading-relaxed mb-auto">
                 {card.description}
               </p>
               <button
-                className={`mt-6 w-full py-2 px-4 font-roboto-mono font-bold text-xs rounded-full ${
+                className={`mt-6 w-full py-2 px-4 font-roboto-mono font-bold text-[18px] md:text-[18px] lg:text-[18px] rounded-full ${
                   card.buttonStyle === "primary"
                     ? "bg-[#86A0FF] text-black hover:bg-[#a0b4ff]"
                     : "bg-transparent text-[#D9D9D9] border border-[#D9D9D9] hover:bg-[#333333]"
@@ -149,11 +149,11 @@ export default function PricingSection() {
                         <span className="text-[#D9D9D9] font-dm-sans font-light text-base ml-1">{card.period}</span>
                       )}
                     </div>
-                    <p className="text-[#D9D9D9] font-ibm-plex-sans font-light text-xs leading-relaxed mb-auto">
+                    <p className="text-[#D9D9D9] font-dm-sans font-thin text-[16px] md:text-[20px] lg:text-[28px] leading-relaxed mb-auto">
                       {card.description}
                     </p>
                     <button
-                      className={`mt-6 w-full py-2 px-4 font-roboto-mono font-bold text-xs rounded-full ${
+                      className={`mt-6 w-full py-2 px-4 font-roboto-mono font-bold text-[18px] md:text-[18px] lg:text-[18px] rounded-full ${
                         card.buttonStyle === "primary"
                           ? "bg-[#86A0FF] text-black hover:bg-[#a0b4ff]"
                           : "bg-transparent text-[#D9D9D9] border border-[#D9D9D9] hover:bg-[#333333]"
