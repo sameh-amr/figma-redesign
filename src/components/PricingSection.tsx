@@ -93,10 +93,10 @@ export default function PricingSection() {
     <section className=" relative w-full bg-black py-14 md:py-20 lg:py-24">
       <div className="container max-w-[1680px] mx-auto px-3 sm:px-4 md:px-6 lg:px-[100px]">
         {/* Small heading - Single row */}
-        <p className="text-center text-[#86A0FF] font-dm-sans text-sm mb-2">Lorem ipsum</p>
+        <p className="text-center text-[#86A0FF] font-dm-sans font-bold text-[11px] md:text-[15px] lg:text-[20px] mb-2">Lorem ipsum</p>
 
         {/* Large heading - Single row */}
-        <h2 className="text-center font-dm-sans font-extralight text-xl md:text-2xl lg:text-3xl text-[#D9D9D9] mb-8 md:mb-14">
+        <h2 className="text-center font-dm-sans font-extralight text-[28px] md:text-[40px] lg:text-[58px] text-[#D9D9D9] mb-8 md:mb-14">
           Lorem ipsum egestas nulla
         </h2>
 
