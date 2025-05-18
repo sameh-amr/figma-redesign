@@ -25,7 +25,7 @@ export default function StatsSection() {
         </h2>
 
         {/* Description paragraph - Centered */}
-        <p className="font-ibm-plex-sans font-light text-[14px] md:text-[17px] lg:text-[20px] leading-relaxed text-[#D9D9D9] text-center mx-auto mb-10 md:mb-16">
+        <p className="container font-ibm-plex-sans font-light text-[14px] md:text-[17px] lg:text-[20px] leading-relaxed text-[#D9D9D9] text-center mx-auto mb-10 md:mb-16">
           Lorem ipsum dolor sit amet consectetur. Tortor egestas at pulvinar amet tortor. Eu non tristique faucibus
           venenatis fringilla. Sit turpis consectetur lobortis commodo sit lacus tellus sed. Ut arcu pellentesque diam
           dolor. Amet vestibulum nullam dolor phasellus quam integer. Placerat sed lacus nulla a. Malesuada.
