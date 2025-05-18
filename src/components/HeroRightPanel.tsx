@@ -1,5 +1,5 @@
 import React from "react";
-import { DataPanel } from "./ui/DataPanel"
+import { DataPanel } from "./ui/DataPanel";
 
 export default function HeroRightPanel() {
   // First panel data
@@ -8,8 +8,9 @@ export default function HeroRightPanel() {
     titleColor: "#86A0FF",
     headers: [
       { text: "Lorem ipsum" },
-      { text: "Volutpat", className: "ml-auto mr-16" },
-      { text: "Lorem ipsum", className: "mr-10" },
+      { text: "Volutpat" },
+      { text: "Lorem ipsum" },
+      { text: "" },
     ],
     rows: [
       {
@@ -38,7 +39,7 @@ export default function HeroRightPanel() {
         tag: { text: "Mattis", color: "pink" },
       },
     ],
-  }
+  };
 
   // Second panel data
   const secondPanelData = {
@@ -46,8 +47,9 @@ export default function HeroRightPanel() {
     titleColor: "#86A0FF",
     headers: [
       { text: "Donec" },
-      { text: "Senectus", className: "ml-16" },
-      { text: "Lorem ipsum", className: "ml-auto mr-10" },
+      { text: "Senectus" },
+      { text: "Lorem ipsum" },
+      { text: "" },
     ],
     rows: [
       {
@@ -76,12 +78,12 @@ export default function HeroRightPanel() {
         tag: { text: "Auctor", color: "pink" },
       },
     ],
-  }
+  };
 
   return (
     <div className="flex flex-col space-y-8">
       <DataPanel {...firstPanelData} />
       <DataPanel {...secondPanelData} />
     </div>
-  )
+  );
 }
