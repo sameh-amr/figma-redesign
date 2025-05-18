@@ -80,7 +80,7 @@ export default function Hero() {
               {bulletPoints.map((text, index) => (
                 <div
                   key={index}
-                  className="font-ibm-plex-sans font-light text-xs md:text-sm leading-relaxed text-[#D9D9D9] flex"
+                  className="font-ibm-plex-sans font-light text-[13px] md:text-[16px] lg:text-[20px] leading-relaxed text-[#D9D9D9] flex"
                 >
                   <span className="inline-block mr-1.5 text-white">•</span>{" "}
                   {text}
