@@ -67,11 +67,11 @@ export function AccordionSection({
           {/* Four column feature section - One per row on mobile */}
           <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
             {icons.map((item, index) => (
-              <div key={index} className="flex flex-col items-start">
+              <div key={index} className="flex flex-col items-center">
                 {/* Icon in its own row */}
-                <div className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 mb-3 text-[#86A0FF] text-left w-full">{item.icon}</div>
+                <div className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 mb-3 text-[#86A0FF] text-center w-full">{item.icon}</div>
                 {/* Text in its own row */}
-                <p className="font-ibm-plex-sans font-light text-[13px] md:text-[16px] lg:text-[20px] leading-relaxed text-[#D9D9D9] text-left w-full">
+                <p className="font-ibm-plex-sans font-light text-[13px] md:text-[16px] lg:text-[20px] leading-relaxed text-[#D9D9D9] text-center w-full">
                   {item.text}
                 </p>
               </div>
