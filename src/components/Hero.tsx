@@ -69,7 +69,7 @@ export default function Hero() {
           {/* Text section below laptop */}
           <div className="container flex flex-col items-center relative">
             {/* Paragraph text */}
-            <p className="font-ibm-plex-sans font-light text-sm md:text-base lg:text-lg leading-relaxed text-[#D9D9D9] text-center max-w-[1013px] relative z-20 mb-8">
+            <p className="font-ibm-plex-sans font-light text-[14px] md:text-[20px] lg:text-[28px] leading-relaxed text-[#D9D9D9] text-center max-w-[1013px] relative z-20 mb-8">
               Lorem ipsum dolor sit amet consectetur. Sit sit vulputate neque
               donec ultrices laoreet elit dictum dolor. Amet quisque dictum
               feugiat nunc nullam feugiat odio semper id.
