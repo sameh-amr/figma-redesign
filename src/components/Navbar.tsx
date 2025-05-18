@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+  const handleButtonClick = () => {
+    navigate("/signup");
+  };
   return (
     <header className="sticky top-0 z-50 w-full h-[60px] bg-[#0f0f0f]/90 backdrop-blur-sm">
       <div className="max-w-[1680px] mx-auto px-3 sm:px-4 md:px-6 lg:px-[100px] h-full relative">
@@ -17,7 +22,10 @@ export default function Navbar() {
               aria-label="Company Logo"
             >
               <g clipPath="url(#clip0_7760_114)">
-                <path d="M51.2775 29.3232H63.2295V25.7232H55.5255V12.1632H51.2775V29.3232Z" fill="white" />
+                <path
+                  d="M51.2775 29.3232H63.2295V25.7232H55.5255V12.1632H51.2775V29.3232Z"
+                  fill="white"
+                />
                 <path
                   d="M70.3105 26.9232C68.6065 26.9232 67.7185 25.4352 67.7185 23.2032C67.7185 20.9712 68.6065 19.4592 70.3105 19.4592C72.0145 19.4592 72.9265 20.9712 72.9265 23.2032C72.9265 25.4352 72.0145 26.9232 70.3105 26.9232ZM70.3345 29.7072C74.2945 29.7072 76.8865 26.8992 76.8865 23.2032C76.8865 19.5072 74.2945 16.6992 70.3345 16.6992C66.3985 16.6992 63.7585 19.5072 63.7585 23.2032C63.7585 26.8992 66.3985 29.7072 70.3345 29.7072Z"
                   fill="white"
@@ -67,12 +75,12 @@ export default function Navbar() {
 
           {/* Button - Hidden on small screens */}
           <div className="hidden sm:block">
-            <button className="bg-[#D9D9D9] text-black font-dm-sans font-bold text-xs w-[160px] h-[36px] rounded-[31px]">
+            <button className="bg-[#D9D9D9] text-black font-dm-sans font-bold text-xs w-[160px] h-[36px] rounded-[31px]" onClick={handleButtonClick}>
               Lorem Ipsum
             </button>
           </div>
         </div>
       </div>
     </header>
-  )
+  );
 }
