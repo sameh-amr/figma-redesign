@@ -104,7 +104,7 @@ export default function PricingSection() {
         <div className="container hidden md:grid md:grid-cols-3 gap-4 lg:gap-6">
           {/* Desktop view - Grid */}
           {pricingCards.map((card, index) => (
-            <div key={index} className="container bg-[#0f0f0f] border border-[#333333] rounded-2xl p-6 flex flex-col">
+            <div key={index} className="container bg-[#0f0f0f] border border-[#333333] rounded-2xl p-6 flex flex-col sm:min-h-[391px] md:min-h-[520px] lg:min-h-[400px] w-[80%] max-w-[80%]">
               <h3 className="text-[#86A0FF] font-dm-sans text-lg md:text-xl mb-2">{card.title}</h3>
               <div className="flex items-baseline mb-6">
                 <span className="text-[#D9D9D9] font-dm-sans font-extralight text-2xl md:text-3xl">{card.price}</span>
@@ -140,8 +140,8 @@ export default function PricingSection() {
               onTouchEnd={handleTouchEnd}
             >
               {pricingCards.map((card, index) => (
-                <div key={index} className="w-full px-2">
-                  <div className="bg-[#0f0f0f] border border-[#333333] rounded-2xl p-6 flex flex-col">
+                <div key={index} className="w-full flex justify-center px-2 lg:h-[300px]">
+                  <div className="bg-[#0f0f0f] border border-[#333333] rounded-2xl p-6 flex flex-col w-[70%] mx-auto min-h-[200px] ">
                     <h3 className="text-[#86A0FF] font-dm-sans text-lg mb-2">{card.title}</h3>
                     <div className="flex items-baseline mb-6">
                       <span className="text-[#D9D9D9] font-dm-sans font-extralight text-2xl">{card.price}</span>
