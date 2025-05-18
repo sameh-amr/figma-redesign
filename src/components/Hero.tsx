@@ -67,7 +67,7 @@ export default function Hero() {
           </div>
 
           {/* Text section below laptop */}
-          <div className="container flex flex-col items-center relative">
+          <div className=" flex flex-col items-center relative">
             {/* Paragraph text */}
             <p className="font-ibm-plex-sans font-light text-[14px] md:text-[20px] lg:text-[28px] leading-relaxed text-[#D9D9D9] text-center max-w-[1013px] relative z-20 mb-8">
               Lorem ipsum dolor sit amet consectetur. Sit sit vulputate neque
@@ -76,13 +76,13 @@ export default function Hero() {
             </p>
 
             {/* Four bullet point paragraphs - One per row on mobile */}
-            <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-[1200px] mx-auto">
+            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-[1200px] mx-auto">
               {bulletPoints.map((text, index) => (
                 <div
                   key={index}
-                  className="font-ibm-plex-sans font-light text-[13px] md:text-[16px] lg:text-[20px] leading-relaxed text-[#D9D9D9] flex"
+                  className="container font-ibm-plex-sans font-light text-[13px] md:text-[16px] lg:text-[20px] leading-relaxed text-[#D9D9D9] flex"
                 >
-                  <span className="inline-block mr-1 text-white">•</span>{text}
+                  <span className="inline-block mr-2 md:mr-1 text-white ml-3 md:ml-0">•</span>{text}
                 </div>
               ))}
             </div>
