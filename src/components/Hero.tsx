@@ -42,7 +42,7 @@ export default function Hero() {
           </div>
 
           {/* Right side - Data panels with ellipse - Match left height */}
-          <div className="container relative z-10 w-full order-2 lg:order-2 flex flex-col h-full min-h-[420px]" id="hero-right-col">
+          <div className=" relative z-10 w-full order-2 lg:order-2 flex flex-col h-full min-h-[420px]" id="hero-right-col">
             {/* Positioned ellipse exactly between the two panels */}
             <div className="absolute inset-0 pointer-events-none">
               <BlurEllipse

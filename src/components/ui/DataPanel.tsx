@@ -45,7 +45,7 @@ export function DataPanel({
       {/* Title */}
       <div className="mb-1.5">
         <h3
-          className={`font-dm-sans font-light text-base leading-tight mb-2 flex items-center`}
+          className="font-dm-sans font-medium text-[16px] md:text-[18px] lg:text-[20px] leading-tight mb-2 flex items-center"
           style={{ color: titleColor }}
         >
           {title}
@@ -63,13 +63,11 @@ export function DataPanel({
           </span>
         </h3>
 
-        <div className="flex px-2 text-[10px] md:text-xs font-dm-sans font-medium text-[#888888] mb-1 w-full whitespace-nowrap overflow-x-auto gap-2">
+        <div className="flex px-2 mb-1 w-full whitespace-nowrap overflow-x-auto gap-2">
           {headers.map((item, index) => (
             <span
               key={index}
-              className={`basis-0 grow font-dm-sans font-light text-[10px] md:text-xs leading-tight text-[#D9D9D9] text-center truncate ${
-                item.className || ""
-              }`}
+              className={`basis-0 grow truncate text-center font-ibm-plex-sans text-[7px] md:text-[9px] lg:text-[11px] ${item.className || ""}`}
               style={{ minWidth: 0 }}
             >
               {item.text}
@@ -90,7 +88,7 @@ export function DataPanel({
           {row.items.map((item, idx) => (
             <span
               key={idx}
-              className={`w-1/4 font-dm-sans font-light text-[10px] md:text-xs lg:text-sm leading-tight text-[#D9D9D9] truncate text-center ${
+              className={`w-1/4 font-dm-sans font-light text-[10px] md:text-[15px] lg:text-[21px] leading-tight text-[#D9D9D9] truncate text-center ${
                 item.className || ""
               }`}
             >
@@ -98,7 +96,7 @@ export function DataPanel({
             </span>
           ))}
           <span
-            className={`w-1/4 font-ibm-plex-sans font-normal text-[10px] md:text-xs lg:text-sm leading-tight ${
+            className={`w-1/4 font-ibm-plex-sans font-normal text-[10px] md:text-[15px] lg:text-[21px] leading-tight ${
               row.tag.color === "green" ? "text-[#B0FFA0]" : "text-[#FFA0AC]"
             } whitespace-nowrap text-center`}
           >
@@ -143,7 +141,7 @@ function DataRow({
       {items.map((item, index) => (
         <span
           key={index}
-          className={`basis-0 grow font-dm-sans font-light text-[10px] md:text-xs leading-tight text-[#D9D9D9] text-center truncate ${
+          className={`basis-0 grow font-dm-sans font-light text-[10px] md:text-[15px] leading-tight text-[#D9D9D9] text-center truncate ${
             item.className || ""
           }`}
           style={{ minWidth: 0 }}
@@ -152,7 +150,7 @@ function DataRow({
         </span>
       ))}
       <span
-        className={`basis-0 grow font-ibm-plex-sans font-normal text-[10px] md:text-xs leading-tight ${tagColorClass} text-center whitespace-nowrap`}
+        className={`basis-0 grow font-ibm-plex-sans font-normal text-[10px] md:text-[15px] leading-tight ${tagColorClass} text-center whitespace-nowrap`}
       >
         {tag.text}
       </span>
