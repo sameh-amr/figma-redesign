@@ -47,18 +47,20 @@ export function AccordionSection({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Left column */}
             <div>
-              <h3 className="font-dm-sans text-lg text-[#86A0FF] mb-3">{subtitle}</h3>
-              <p className="font-ibm-plex-sans font-light text-xs leading-relaxed text-[#D9D9D9] mb-4">
+              <h3 className="font-dm-sans font-bold text-[18px] md:text-[24px] lg:text-[32px] text-[#86A0FF] mb-3">{subtitle}</h3>
+              <p className="font-ibm-plex-sans font-light text-[13px] md:text-[18px] lg:text-[24px] leading-relaxed text-[#D9D9D9] mb-4">
                 {leftColumnText}
               </p>
             </div>
 
             {/* Right column */}
             <div>
-              <p className="font-ibm-plex-sans font-light text-xs leading-relaxed text-[#D9D9D9] mb-4">
+              <p className="font-dm-sans text-[20px] md:text-[28px] lg:text-[36px] leading-relaxed text-[#D9D9D9] mb-4">
                 {rightColumnText}
               </p>
-              <p className="font-ibm-plex-sans font-light text-sm text-[#D9D9D9] italic">{attribution}</p>
+              <p className="font-dm-sans text-[13px] md:text-[18px] lg:text-[24px] text-[#D9D9D9] italic">
+                {attribution}
+              </p>
             </div>
           </div>
 
