@@ -17,7 +17,7 @@ export default function Hero() {
     <section className=" relative w-full py-10 md:py-14 lg:py-16 bg-black overflow-hidden">
       <div className="  max-w-[1680px] mx-auto px-3 sm:px-4 md:px-6 lg:px-[100px]">
         {/* Mobile-friendly grid layout */}
-        <div className="container flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-8 items-start">
+        <div className=" flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-8 items-start">
           {/* Left side content - Increased font size and width */}
           <div className="relative w-full order-1" id="hero-left-col">
             <h1 className="font-dm-sans font-extralight text-[40px] md:text-[52px] lg:text-[64px] leading-tight text-[#D9D9D9] mb-4 md:mb-5 max-w-[700px]">
@@ -61,7 +61,7 @@ export default function Hero() {
         </div>
 
         {/* Laptop illustration section below */}
-        <div className="mt-10 md:mt-14 lg:mt-16">
+        <div className=" mt-10 md:mt-14 lg:mt-16">
           <div className="relative w-full">
             <LaptopIllustration />
           </div>
@@ -76,14 +76,13 @@ export default function Hero() {
             </p>
 
             {/* Four bullet point paragraphs - One per row on mobile */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-[1200px] mx-auto">
+            <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-[1200px] mx-auto">
               {bulletPoints.map((text, index) => (
                 <div
                   key={index}
                   className="font-ibm-plex-sans font-light text-[13px] md:text-[16px] lg:text-[20px] leading-relaxed text-[#D9D9D9] flex"
                 >
-                  <span className="inline-block mr-1.5 text-white">•</span>{" "}
-                  {text}
+                  <span className="inline-block mr-1 text-white">•</span>{text}
                 </div>
               ))}
             </div>
