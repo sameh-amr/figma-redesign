@@ -26,9 +26,9 @@ export default function LaptopIllustration() {
       </div>
 
       {/* Text under the laptop with the specified CSS */}
-      <div className="container relative mx-auto mt-0 h-[80px] md:h-[120px] lg:h-[156px] flex items-center justify-center" style={{ maxWidth: "1008px" }}>
+      <div className="container relative mx-auto mt-0 flex items-stretch justify-center h-auto min-h-0" style={{ maxWidth: "1008px" }}>
         <h2
-          className="font-dm-sans font-extralight text-[28px] lg:text-[58px] text-[#86A0FF] text-center mx-auto"
+          className="font-dm-sans font-extralight text-[28px] lg:text-[58px] text-[#86A0FF] text-center mx-auto h-[220px] md:h-[120px] lg:h-[156px] flex items-center justify-center"
         >
           Lorem ipsum cursus proin
         </h2>
