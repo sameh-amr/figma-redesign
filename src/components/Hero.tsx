@@ -20,10 +20,10 @@ export default function Hero() {
         <div className="container flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-8 items-start">
           {/* Left side content - Increased font size and width */}
           <div className="relative w-full order-1">
-            <h1 className="font-dm-sans font-extralight text-2xl md:text-3xl lg:text-4xl leading-tight text-[#D9D9D9] mb-4 md:mb-5 max-w-[700px]">
+            <h1 className="font-dm-sans font-extralight text-[40px] md:text-[52px] lg:text-[64px] leading-tight text-[#D9D9D9] mb-4 md:mb-5 max-w-[700px]">
               Lorem ipsum habitant a rhoncus etiam.
             </h1>
-            <p className="font-ibm-plex-sans font-light text-sm md:text-base lg:text-lg leading-relaxed text-[#D9D9D9] mb-5 md:mb-6 max-w-[700px]">
+            <p className="font-ibm-plex-sans font-light text-[14px] md:text-[17px] lg:text-[20px] leading-relaxed text-[#D9D9D9] mb-5 md:mb-6 max-w-[700px]">
               Lorem ipsum dolor sit amet consectetur. Sapien vitae tristique
               ultrices ultrices. Aliquam suscipit venenatis sed dignissim.
               Ultrices amet neque integer rhoncus pellentesque habitant amet
@@ -32,9 +32,13 @@ export default function Hero() {
               eget commodo urna blandit pellentesque etiam. Nunc ut mattis ut
               leo nibh eu massa hendrerit egestas. Parturient.
             </p>
-            <PrimaryButton className="w-full sm:w-[200px] h-[36px] text-xs">
+            <PrimaryButton className="w-full sm:w-[200px] h-[36px] text-xs !bg-[#86A0FF] !text-black !font-bold">
               Lorem Ipsum
             </PrimaryButton>
+            <span className="block font-ibm-plex-sans font-bold text-[14px] md:text-[17px] lg:text-[20px] text-black mt-3">
+              {/* Replace this with your actual text */}
+              This is the black bold text after the paragraph.
+            </span>
           </div>
 
           {/* Right side - Data panels with ellipse - Show on all screens */}
