@@ -34,12 +34,12 @@ export function AccordionSection({
         onClick={toggleExpanded}
         className="w-full flex justify-between items-center py-4 border-b border-[#333333] text-left focus:outline-none group"
       >
-        <h2 className="font-dm-sans font-extralight text-xl md:text-2xl lg:text-3xl leading-tight text-[#D9D9D9]">
+        <h2 className="font-dm-sans font-extralight text-[20px] md:text-[32px] lg:text-[48px] leading-tight text-[#D9D9D9]">
           {title}
         </h2>
 
         {/* Simple text plus/minus that matches the section title size */}
-        <span className="text-[#D9D9D9] font-extralight text-xl md:text-2xl lg:text-3xl">{isExpanded ? "−" : "+"}</span>
+        <span className="font-dm-sans font-extralight text-[20px] md:text-[32px] lg:text-[48px] text-[#D9D9D9]">{isExpanded ? "−" : "+"}</span>
       </button>
 
       {isExpanded && (
