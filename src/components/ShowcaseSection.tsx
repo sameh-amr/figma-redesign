@@ -45,7 +45,7 @@ export default function ShowcaseSection() {
       <div className="container max-w-[1680px] mx-auto px-3 sm:px-4 md:px-6 lg:px-[100px] relative z-10 flex flex-col items-center">
         <div className="flex w-full justify-center">
           <h2
-            className="font-dm-sans font-extralight text-xl md:text-2xl lg:text-3xl leading-tight text-[#D9D9D9] text-center max-w-[1076px] mx-auto mb-8 md:mb-14"
+            className="hidden md:block font-dm-sans font-extralight text-[40px] lg:text-[58px] leading-tight text-[#D9D9D9] text-center max-w-[1076px] mx-auto mb-8 md:mb-14"
           >
             Lorem ipsum urna dapibus cursus
           </h2>

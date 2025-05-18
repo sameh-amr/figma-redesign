@@ -50,9 +50,9 @@ export function ShowcaseRow({
       </div>
 
       {/* Text Content - Always second on mobile */}
-      <div className={`${imageOnRight ? "lg:order-1" : "lg:order-2"} order-2 flex flex-col items-center text-center lg:items-start lg:text-left`}>
-        <h3 className="font-dm-sans font-extralight text-lg md:text-xl leading-tight text-[#86A0FF] mb-3">{title}</h3>
-        <p className="font-ibm-plex-sans font-light text-xs md:text-sm leading-relaxed text-[#D9D9D9] mb-3">
+      <div className={`${imageOnRight ? "lg:order-1" : "lg:order-2"} order-2 flex flex-col items-center text-center lg:items-start lg:text-left mb-8`}>
+        <h3 className="font-dm-sans font-extralight md:font-extralight lg:font-extralight font-bold text-[22px] md:text-[32px] lg:text-[40px] leading-tight text-[#86A0FF] mb-3">{title}</h3>
+        <p className="font-dm-sans font-light text-[15px] md:text-[16px] lg:text-[17px] leading-relaxed text-[#D9D9D9] mb-3">
           {description}
         </p>
         {highlightedText && (
