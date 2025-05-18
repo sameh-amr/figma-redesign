@@ -19,7 +19,7 @@ export default function Hero() {
         {/* Mobile-friendly grid layout */}
         <div className="container flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-8 items-start">
           {/* Left side content - Increased font size and width */}
-          <div className="relative w-full order-1">
+          <div className="relative w-full order-1" id="hero-left-col">
             <h1 className="font-dm-sans font-extralight text-[40px] md:text-[52px] lg:text-[64px] leading-tight text-[#D9D9D9] mb-4 md:mb-5 max-w-[700px]">
               Lorem ipsum habitant a rhoncus etiam.
             </h1>
@@ -41,8 +41,8 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Right side - Data panels with ellipse - Show on all screens */}
-          <div className="container relative z-10 w-full order-2 lg:order-2">
+          {/* Right side - Data panels with ellipse - Match left height */}
+          <div className="container relative z-10 w-full order-2 lg:order-2 flex flex-col h-full min-h-[420px]" id="hero-right-col">
             {/* Positioned ellipse exactly between the two panels */}
             <div className="absolute inset-0 pointer-events-none">
               <BlurEllipse
@@ -54,7 +54,7 @@ export default function Hero() {
                 className="z-0 transform -translate-x-1/2 -translate-y-1/2"
               />
             </div>
-            <div className="space-y-6 relative z-10">
+            <div className="space-y-6 relative z-10 flex flex-col h-full justify-stretch min-h-full" style={{minHeight: '100%'}}>
               <HeroRightPanel />
             </div>
           </div>

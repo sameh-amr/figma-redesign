@@ -80,14 +80,31 @@ export function DataPanel({
 
       {/* Rows */}
       {rows.map((row, index) => (
-        <DataRow
+        <div
           key={index}
-          items={row.items}
-          tag={row.tag}
-          hasBorder={row.hasBorder}
-          isLast={index === rows.length - 1}
-          colCount={headers.length}
-        />
+          className={`relative w-full bg-[rgba(217,217,217,0.1)] rounded-[30px] flex items-center px-2 hover:bg-[rgba(217,217,217,0.15)] transition-colors cursor-pointer${
+            index === rows.length - 1 ? "" : " mb-[8px]"
+          }${row.hasBorder ? " border border-[#D9D9D9]" : ""}`}
+          style={{ fontSize: "10px", whiteSpace: "nowrap", height: "60px" }}
+        >
+          {row.items.map((item, idx) => (
+            <span
+              key={idx}
+              className={`w-1/4 font-dm-sans font-light text-[10px] md:text-xs lg:text-sm leading-tight text-[#D9D9D9] truncate text-center ${
+                item.className || ""
+              }`}
+            >
+              {item.text}
+            </span>
+          ))}
+          <span
+            className={`w-1/4 font-ibm-plex-sans font-normal text-[10px] md:text-xs lg:text-sm leading-tight ${
+              row.tag.color === "green" ? "text-[#B0FFA0]" : "text-[#FFA0AC]"
+            } whitespace-nowrap text-center`}
+          >
+            {row.tag.text}
+          </span>
+        </div>
       ))}
     </div>
   );
