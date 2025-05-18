@@ -105,11 +105,11 @@ export default function PricingSection() {
           {/* Desktop view - Grid */}
           {pricingCards.map((card, index) => (
             <div key={index} className="container bg-[#0f0f0f] border border-[#333333] rounded-2xl p-6 flex flex-col sm:min-h-[391px] md:min-h-[520px] lg:min-h-[400px] w-[80%] max-w-[80%]">
-              <h3 className="text-[#86A0FF] font-dm-sans text-lg md:text-xl mb-2">{card.title}</h3>
+              <h3 className="text-[#86A0FF] font-dm-sans font-[700] text-[24px] md:text-[30px] lg:text-[36px] mb-2">{card.title}</h3>
               <div className="flex items-baseline mb-6">
-                <span className="text-[#D9D9D9] font-dm-sans font-extralight text-2xl md:text-3xl">{card.price}</span>
+                <span className="text-[#D9D9D9] font-dm-sans font-bold text-[28px] md:text-[34px] lg:text-[40px] !font-bold">{card.price}</span>
                 {card.period && (
-                  <span className="text-[#D9D9D9] font-dm-sans font-light text-base ml-1">{card.period}</span>
+                  <span className="text-[#D9D9D9] font-dm-sans font-light text-[20px] md:text-[24px] lg:text-[30px] ml-1">{card.period}</span>
                 )}
               </div>
               <p className="text-[#D9D9D9] font-ibm-plex-sans font-light text-xs leading-relaxed mb-auto">
