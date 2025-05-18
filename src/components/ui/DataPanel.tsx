@@ -80,15 +80,15 @@ export function DataPanel({
       {rows.map((row, index) => (
         <div
           key={index}
-          className={`relative w-full bg-[rgba(217,217,217,0.1)] rounded-[30px] flex items-center px-2 hover:bg-[rgba(217,217,217,0.15)] transition-colors cursor-pointer${
+          className={`relative w-full bg-[rgba(217,217,217,0.1)] rounded-[30px] lg:rounded-[40px] flex items-center px-2 hover:bg-[rgba(217,217,217,0.15)] transition-colors cursor-pointer${
             index === rows.length - 1 ? "" : " mb-[8px]"
-          }${row.hasBorder ? " border border-[#D9D9D9]" : ""}`}
-          style={{ fontSize: "10px", whiteSpace: "nowrap", height: "60px" }}
+          }${row.hasBorder ? " border border-[#D9D9D9]" : ""} lg:border lg:border-[#D9D9D9]`}
+          style={{ fontSize: "10px", whiteSpace: "nowrap", height: "60px", ...(row.hasBorder ? {} : { border: undefined }) }}
         >
           {row.items.map((item, idx) => (
             <span
               key={idx}
-              className={`w-1/4 font-dm-sans font-light text-[10px] md:text-[15px] lg:text-[21px] leading-tight text-[#D9D9D9] truncate text-center ${
+              className={`w-1/4 font-dm-sans font-light lg:font-light text-[10px] md:text-[15px] lg:text-[21px] leading-tight lg:leading-[22px] text-[#D9D9D9] truncate text-center ${
                 item.className || ""
               }`}
             >

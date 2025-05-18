@@ -20,10 +20,10 @@ export default function Hero() {
         <div className=" flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-8 items-start">
           {/* Left side content - Increased font size and width */}
           <div className="relative w-full order-1" id="hero-left-col">
-            <h1 className="font-dm-sans font-extralight text-[40px] md:text-[52px] lg:text-[64px] leading-tight text-[#D9D9D9] mb-4 md:mb-5 max-w-[700px]">
+            <h1 className="font-dm-sans font-extralight lg:font-extralight text-[40px] md:text-[52px] lg:text-[64px] leading-tight lg:leading-[66px] text-[#D9D9D9] mb-4 md:mb-5 max-w-[700px] lg:[text-shadow:0px_4px_4px_rgba(0,0,0,0.25)]">
               Lorem ipsum habitant a rhoncus etiam.
             </h1>
-            <p className="font-ibm-plex-sans font-light text-[14px] md:text-[17px] lg:text-[20px] leading-relaxed text-[#D9D9D9] mb-5 md:mb-6 max-w-[700px]">
+            <p className="font-ibm-plex-sans font-light lg:font-light text-[14px] md:text-[17px] lg:text-[20px] leading-relaxed lg:leading-[28px] text-[#D9D9D9] mb-5 md:mb-6 max-w-[700px]">
               Lorem ipsum dolor sit amet consectetur. Sapien vitae tristique
               ultrices ultrices. Aliquam suscipit venenatis sed dignissim.
               Ultrices amet neque integer rhoncus pellentesque habitant amet
