@@ -67,7 +67,7 @@ export default function Navbar() {
 
           {/* Button - Hidden on small screens */}
           <div className="hidden sm:block">
-            <button className="bg-[#D9D9D9] text-black font-roboto-mono font-dm-sans text-xs w-[160px] h-[36px] rounded-[31px]">
+            <button className="bg-[#D9D9D9] text-black font-dm-sans font-bold text-xs w-[160px] h-[36px] rounded-[31px]">
               Lorem Ipsum
             </button>
           </div>
