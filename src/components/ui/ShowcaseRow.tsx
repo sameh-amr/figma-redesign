@@ -17,7 +17,7 @@ export function ShowcaseRow({
   imageOnRight,
 }: ShowcaseRowProps) {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center mb-2">
       {/* Image - Always first on mobile */}
       <div className={`${imageOnRight ? "lg:order-2" : "lg:order-1"} order-1`}>
         <div
