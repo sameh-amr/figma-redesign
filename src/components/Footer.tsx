@@ -16,21 +16,21 @@ export default function Footer() {
         ></div>
 
         {/* Main heading - Single row */}
-        <h2 className="font-dm-sans font-normal text-xl md:text-2xl lg:text-3xl leading-tight text-[#222222] mb-3 max-w-[800px] relative z-10">
+        <h2 className="font-dm-sans font-normal text-[40px] md:text-[64px] lg:text-[96px] leading-tight text-[#222222] mb-3 max-w-[800px] relative z-10">
           Lorem ipsum dolor sit amet consectetur.
         </h2>
 
         {/* Paragraph - Single row */}
-        <p className="font-ibm-plex-sans font-light text-xs md:text-sm lg:text-base leading-relaxed text-[#222222] mb-6 max-w-[600px] relative z-10">
+        <p className="font-dm-sans font-normal text-[14px] md:text-[20px] lg:text-[28px] leading-relaxed text-[#222222] mb-6 max-w-[600px] relative z-10">
           Lorem ipsum dolor sit amet consectetur. Leo nam urna accumsan massa iaculis. Etiam convallis posuere etiam sit
           ipsum imperdiet sed vulputate ut. A sem sagittis egestas arcu viverra. Suspendisse.
         </p>
 
         {/* Button with white ellipse background - Single row */}
         <div className="relative mb-10 z-10 w-full flex justify-center">
-          <div className="relative">
-            <div className="absolute inset-0 bg-white rounded-full transform scale-110"></div>
-            <button className="relative bg-white text-[#222222] font-roboto-mono font-bold text-xs rounded-full py-1.5 px-4 hover:bg-opacity-90 transition-all">
+          <div className="relative w-[220px] md:w-[280px] lg:w-[331px] h-[40px]">
+            <div className="absolute inset-0 bg-[#D9D9D9] rounded-[30px]" />
+            <button className="absolute inset-0 w-full h-full flex items-center justify-center font-roboto-mono font-bold text-[13px] md:text-[14px] lg:text-[15px] leading-[30px] tracking-[-0.015em] text-[#0F0F0F] rounded-[50px]">
               Lorem ipsum
             </button>
           </div>
@@ -40,21 +40,21 @@ export default function Footer() {
         <div className="mb-10 relative z-10 w-full flex justify-center">
           <div className="flex items-center justify-center">
             <div className="mr-1.5">
-              <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" fill="white" />
-                <circle cx="14" cy="20" r="4" fill="#86A0FF" />
-                <circle cx="26" cy="20" r="4" fill="#86A0FF" />
-                <circle cx="20" cy="14" r="4" fill="#86A0FF" />
-                <circle cx="20" cy="26" r="4" fill="#86A0FF" />
+              <svg width="48" height="48" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="30" fill="white" />
+                <circle cx="21" cy="30" r="6" fill="#86A0FF" />
+                <circle cx="39" cy="30" r="6" fill="#86A0FF" />
+                <circle cx="30" cy="21" r="6" fill="#86A0FF" />
+                <circle cx="30" cy="39" r="6" fill="#86A0FF" />
               </svg>
             </div>
-            <span className="font-dm-sans font-bold text-lg text-white">Logoipsum</span>
+            <span className="font-dm-sans font-bold text-xl text-white">Logoipsum</span>
           </div>
         </div>
 
         {/* First text block - Single row */}
         <div className="w-full max-w-[356px] mx-auto mb-6 relative z-10">
-          <p className="font-ibm-plex-sans font-normal text-xs leading-relaxed text-[#222222] text-center">
+          <p className="font-ibm-plex-sans font-thin text-[13px] md:text-[14px] lg:text-[15px] leading-relaxed text-[#222222] text-center">
             Lorem ipsum dolor sit amet consectetur. Nulla volutpat aliquam arcu vestibulum proin. Dictum egestas
             lobortis porttitor etiam turpis quam.
           </p>
@@ -62,7 +62,7 @@ export default function Footer() {
 
         {/* Second text block - Single row */}
         <div className="w-full max-w-[388px] mx-auto relative z-10">
-          <p className="font-ibm-plex-sans font-normal text-xs leading-relaxed text-[#222222]">
+          <p className="font-ibm-plex-sans font-thin text-[13px] md:text-[14px] lg:text-[15px] leading-relaxed text-[#222222]">
             Lorem ipsum nunc adipiscing odio tellus turpis adipiscing.
           </p>
         </div>
