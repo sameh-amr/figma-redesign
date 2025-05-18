@@ -11,7 +11,7 @@ interface PrimaryButtonProps {
 
 export function PrimaryButton({ children, href, className = "", onClick }: PrimaryButtonProps) {
   // Using the custom font-roboto-mono and colors defined in your tailwind.config.js
-  const buttonClasses = `font-roboto-mono bg-primary text-primary-foreground font-bold text-lg leading-[30px] tracking-[-0.015em] rounded-[31px] flex items-center justify-center transition-colors hover:bg-primary/90 ${className}`;
+  const buttonClasses = `font-dm-sans font-bold bg-primary text-primary-foreground text-[11px] md:text-[14px] lg:text-[15px] leading-[44px] tracking-[-0.015em] rounded-[31px] flex items-center justify-center transition-colors hover:bg-primary/90 ${className}`;
 
   if (href) {
     return (
